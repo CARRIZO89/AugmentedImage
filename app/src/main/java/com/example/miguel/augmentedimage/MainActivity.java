@@ -34,9 +34,9 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
     }
 
     public void setupDatabase(Config config, Session session){
-        Bitmap flashBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.flash);
+        Bitmap flashBitmap = BitmapFactory.decodeResource(getResources(),R.drawable.justiceleague2017);
         AugmentedImageDatabase aid = new AugmentedImageDatabase(session);
-        aid.addImage("flash", flashBitmap);
+        aid.addImage("justiceleague2017", flashBitmap);
         config.setAugmentedImageDatabase(aid);
     }
 
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements Scene.OnUpdateLis
 
         for (AugmentedImage image : images ) {
             if (image.getTrackingState() == TrackingState.TRACKING){
-                if (image.getName().equals("flash")){
+                if (image.getName().equals("justiceleague2017")){
                     Anchor anchor = image.createAnchor(image.getCenterPose());
 
                     createModel(anchor);
