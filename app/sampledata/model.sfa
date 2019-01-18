@@ -1,0 +1,50 @@
+{
+  materials: [
+    {
+      name: 'model_Material_u1_v1',
+      parameters: [
+        {
+          baseColor: 'tex_u1_v1',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/model.obj',
+    name: 'model',
+    recenter: 'root',
+    scale: 0.016033600000000001,
+  },
+  samplers: [
+    {
+      file: 'sampledata\\tex_u1_v1.jpg',
+      name: 'tex_u1_v1',
+      pipeline_name: 'tex_u1_v1.jpg',
+    },
+  ],
+  version: '0.54:1',
+}
